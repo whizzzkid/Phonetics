@@ -13,7 +13,6 @@
     },
     "content_scripts": [{
         "all_frames": true,
-        "css": "hint.css",
         "matches": ["<all_urls>"],
         "js": ["cs.js"]
     }],
@@ -23,6 +22,9 @@
             "38": "assets/images/icon-38.png"
         },
         "default_title": "Phonetics",
-        "default_popup": "pa.html"
-    }
+        "default_popup": "views/pa.html"
+    },
+    "web_accessible_resources": [
+        "assets/*"
+    ]
 }
