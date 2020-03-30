@@ -1,0 +1,27 @@
+{
+  "name": "phonetics",
+  "version": "0.1.0",
+  "description": "Phonetics Translations for Almost Anything.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whizzzkid/Phonetics.git"
+  },
+  "keywords": [
+    "phonetic",
+    "translation",
+    "nato",
+    "browser",
+    "extension",
+    "addon"
+  ],
+  "author": "Nishant Arora",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/whizzzkid/Phonetics/issues"
+  },
+  "homepage": "https://github.com/whizzzkid/Phonetics#readme"
+}
