@@ -28,10 +28,10 @@
   "devDependencies": {
     "jest": "^25.2.4",
     "rollup": "^2.3.0",
-    "rollup-plugin-copy": "^3.3.0",
-    "webextension-polyfill": "^0.6.0"
+    "rollup-plugin-copy": "^3.3.0"
   },
   "dependencies": {
-    "hint.css": "^2.6.0"
+    "hint.css": "^2.6.0",
+    "webextension-polyfill": "^0.6.0"
   }
 }
