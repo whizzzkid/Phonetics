@@ -4,7 +4,7 @@
   "description": "Phonetics Translations for Almost Anything.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rm -rf ./dist; rollup -c",
     "test": "test"
   },
   "repository": {
@@ -30,7 +30,6 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "jest": "^25.2.4",
     "rollup": "^2.3.0",
-    "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-copy": "^3.3.0"
   },
   "dependencies": {
