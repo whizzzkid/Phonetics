@@ -1,4 +1,3 @@
-import cleaner from 'rollup-plugin-cleaner';
 import copy from 'rollup-plugin-copy';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -11,16 +10,18 @@ export default [
         input: 'src/pageAction.js',
         output: {
             file: `${output}/pa.js`,
-            format: 'iife',
+            format: 'es',
         },
         plugins: [
             ...defaultPlugins,
-            cleaner({
-                targets: ['./dist/'],
-            }),
             copy({
                 targets: [{
-                    src: ['node_modules/hint.min.css', 'src/manifest.json', 'src/assets'],
+                    src: [
+                        'node_modules/hint.min.css',
+                        'src/manifest.json',
+                        'src/assets',
+                        'src/**/*.html'
+                    ],
                     dest: `${output}/`,
                 }],
                 flatten: false,
@@ -31,15 +32,15 @@ export default [
         input: 'src/contentScript.js',
         output: {
             file: `${output}/cs.js`,
-            format: 'iife',
+            format: 'es',
         },
-        plugins: [ ...defaultPlugins ],
+        plugins: [...defaultPlugins],
     },
     {
         input: 'src/background.js',
         output: {
             file: `${output}/bg.js`,
-            format: 'iife',
+            format: 'es',
         },
         plugins: [ ...defaultPlugins ],
     },
